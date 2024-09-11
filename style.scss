@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+.content-container {
+    background-image: url(images/netflixbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .header {
+        display: flex;
+        flex-direction: row;
+        .header-left {
+            height: 100px;
+            width: 50%;
+            .netflix-logo {
+                width: 200px;
+                height: 100px;
+                background-image: url(images/netflixlogo.png);
+            }
+        }
+        .header-right {
+
+        }
+    }
+}
