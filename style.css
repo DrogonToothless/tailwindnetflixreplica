@@ -37,6 +37,7 @@
 }
 .content-container .header .header-right .language-button button {
   height: 100%;
+  font-size: 18px;
 }
 .content-container .header .header-right .signin-button {
   background-color: rgb(255, 0, 0);
@@ -46,6 +47,7 @@
 .content-container .header .header-right .signin-button button {
   height: 100%;
   width: 85px;
+  font-size: 18px;
 }
 .content-container .center {
   margin-top: 200px;
