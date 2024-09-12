@@ -4,23 +4,44 @@
     color: rgb(255, 255, 255);
 }
 .content-container {
-    background-image: url(images/netflixbackground.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.49) 100%), url(images/netflixbackground.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     .header {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
         .header-left {
-            height: 100px;
-            width: 50%;
+            margin-left: 20px;
             .netflix-logo {
-                width: 200px;
-                height: 100px;
+                width: 150px;
+                height: 45px;
                 background-image: url(images/netflixlogo.png);
+                background-size: 100% 100%;
             }
         }
         .header-right {
-
+            margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .language-button {
+                border: 3px solid #ffffff;
+                padding: 0% 25%;
+                button {
+                    height: 100%;
+                }
+            }
+            .signin-button {
+                background-color: rgb(255, 0, 0);
+                border-radius: 5px;
+                margin: 0% 20% 0% 20%;
+                button {
+                    height: 100%;
+                    width: 85px;
+                }
+            }
         }
     }
 }
