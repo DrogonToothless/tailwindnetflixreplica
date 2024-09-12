@@ -6,7 +6,7 @@
 .content-container {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.49) 100%), url(images/netflixbackground.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     height: 100vh;
     .header {
         display: flex;
@@ -87,4 +87,50 @@
             }
         }
     } 
+}
+@media screen and (max-width: 600px) {
+    .content-container {
+        .header {
+            flex-direction: column;
+            .header-left {
+                width: 150px;
+                margin: 0 auto;
+            }
+            .header-right {
+                flex-direction: column;
+                margin: 0 auto;
+                .language-button {
+                    padding: 0px;
+                    width: 130px;
+                    text-align: center;
+                    height: 50px;
+                    margin-top: 20px;
+                }
+                .signin-button {
+                    padding: 0px;
+                    width: 130px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-left: 0;
+                    height: 50px;
+                }
+            }
+        }
+        .center {
+            h1 {
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            .input {
+                .email-input {
+                    width: 200px;
+                }
+                .get-started-button {
+                    width: 100px;
+                }
+            }
+        }
+    }
 }

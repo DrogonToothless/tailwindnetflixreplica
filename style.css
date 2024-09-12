@@ -7,7 +7,7 @@
 .content-container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.49) 100%), url(images/netflixbackground.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   height: 100vh;
 }
 .content-container .header {
@@ -88,4 +88,45 @@
 .content-container .center .input .get-started-button button {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .content-container .header {
+    flex-direction: column;
+  }
+  .content-container .header .header-left {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .content-container .header .header-right {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .content-container .header .header-right .language-button {
+    padding: 0px;
+    width: 130px;
+    text-align: center;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .content-container .header .header-right .signin-button {
+    padding: 0px;
+    width: 130px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+    height: 50px;
+  }
+  .content-container .center h1 {
+    font-size: 40px;
+  }
+  .content-container .center h3 {
+    font-size: 20px;
+  }
+  .content-container .center .input .email-input {
+    width: 200px;
+  }
+  .content-container .center .input .get-started-button {
+    width: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
